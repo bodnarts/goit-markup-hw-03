@@ -141,6 +141,10 @@ p {
   color: #434455;
 }
 
+.futures-container {
+
+}
+
 .futures-title {
   font-weight: 500;
   font-size: 20px;
@@ -155,6 +159,10 @@ p {
 
 .team-item {
   background-color: #FFFFFF;
+}
+
+.team-container {
+
 }
 
 .team-title {
@@ -172,6 +180,10 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+.portfolio-container {
+
 }
 
 .portfolio-title {
@@ -193,6 +205,10 @@ p {
 
 .footer-section {
   background-color: #2e2f42;
+}
+
+.footer-container {
+
 }
 
 .footer-logo {
