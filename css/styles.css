@@ -33,6 +33,10 @@ img {
   border-bottom: 1px solid #e7e9fc;
   }
 
+.container {
+  width: 1158px;
+}
+
 .header-container {
   width: 1440px;
   padding-left: 156px;
@@ -99,6 +103,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
 }
 
 .header-address-link:hover {
@@ -253,7 +258,7 @@ p {
   padding-bottom: 120px;
 }
 
-.w3-portfolio-container {
+.portfolio-container {
   padding-left: 156px;
   padding-right: 156px;
 }
