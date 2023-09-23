@@ -182,6 +182,9 @@ p {
   display: flex;
   gap: 24px;
 }
+.futures-item {
+  width: calc((100% - 72px) / 4);
+}
 
 .futures-title {
   font-weight: 500;
@@ -220,6 +223,10 @@ p {
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
+}
+
+.team-mate-container {
+  padding: 32px 0;
 }
 
 .team-mate-title {
