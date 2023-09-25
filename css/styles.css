@@ -13,13 +13,13 @@ a {
 }
 
 p, h1,h2,h3,h4,h5,h6 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  displey: flex;
 }
 
 ul, ol {
-  margin-top: 0;
-  margin-bottom: 0;
+  list-style: none;
+  margin: 0 auto;
   padding-left: 0;
 }
 
@@ -35,17 +35,21 @@ img {
 
 .container {
   width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .header-container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
+
 .header-navigation {
+  justify-content: space-between;
   display: flex;
   align-items: center;
+  margin-right: auto;
  }
  
 .header-logo {
@@ -114,29 +118,37 @@ img {
 }
 
 .order-section {
+  background: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  justify-content: center;
+  height: 600px;
+  flex-shrink: 0;
   padding: 188px 0;
 }
 
 .order-container {
-  background-color: #2e2f42;
-  padding: 188px 472px 292px 472px;
+  display: block;
 }
 
 .order-button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
+  background: var(--IRIS, #4d5ae5);
+  color: var(--WHITE, #fff);
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #4d5ae5;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
   display: block;
-  margin: 0 auto;
   min-width: 169px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
   height: 56px;
-  border: none;
   border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .order-button:hover {
@@ -148,14 +160,14 @@ img {
 }
 
 .order-page-title {
-  font-weight: 700;
+  color: var(--WHITE, #fff);
   font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-bottom: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1.12px;
   max-width: 496px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .title {
@@ -174,13 +186,11 @@ p {
 }
 
 .futures-container {
-  padding-left: 156px;
-  padding-right: 156px;
+  
 }
 
 .futures-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .visually-hidden {
@@ -200,7 +210,9 @@ p {
   display: flex;
   gap: 24px;
 }
+
 .futures-item {
+  display: block;
   width: calc((100% - 72px) / 4);
 }
 
@@ -212,25 +224,33 @@ p {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+
  .team-list {
+  align-items: center;
+  justify-content: center;
   display: flex;
+  flex-direction: row;
+  padding-top: 72px;
   gap: 24px;
  }
 
 .team-section {
   background-color: #f4f4fd;
-  padding: 120px 0;
+    height: 732px;
+    flex-shrink: 0;
+    display: block;
+    padding: 120px 0;
 }
 
 .team-item {
-  background-color: #FFFFFF;
+  background: var(--WHITE, #fff);
   width: calc((100% - 72px) / 4);
+  padding-bottom: 0px;
   border-radius: 0px 0px 4px 4px;
 }
 
 .team-container {
-  padding-left: 156px;
-  padding-right: 156px;
+  
 }
 
 .team-title {
@@ -244,7 +264,7 @@ p {
 }
 
 .team-mate-container {
-  padding: 32px 0;
+  
 }
 
 .team-mate-title {
@@ -266,13 +286,12 @@ p {
 }
 
 .portfolio-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0 120px 0;
 }
 
 .portfolio-container {
-  padding-left: 156px;
-  padding-right: 156px;
+  display: block;
+  flex-shrink: 0;
 }
 
 .portfolio-title {
@@ -286,6 +305,8 @@ p {
 }
 
 .portfolio-list {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -318,24 +339,20 @@ p {
 }
 
 .portfolio-item-container {
+  
+}
+
+.portfolio-text {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
 
-.portfolio-text {
-  text-align: center;
-}
-
 .footer-section {
-  background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.footer-container {
-  padding-left: 156px;
-  padding-right: 1020px;
+  padding: 100px 0;
+  flex-shrink: 0;
+  background: var(--NAVY-BLUE, #2e2f42);
+  color: var(--CLOUD, #f4f4fd);
 }
 
 .footer-logo {
@@ -355,8 +372,10 @@ p {
 }
 
 .footer-text {
+  font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.32px;
   color: #f4f4fd;
-  margin-top: 17.5px;
+  width: 264px;
 }
